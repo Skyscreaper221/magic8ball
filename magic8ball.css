@@ -1,0 +1,63 @@
+/* Light blue background and text */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #ADD8E6; /* light blue */
+  color: #000080; /* dark blue text */
+}
+
+/* Heading */
+h1 {
+  color: #00008B;
+}
+
+/* Paragraph */
+p {
+  color: #000080;
+}
+
+/* Center input and button */
+.input-container {
+  margin-top: 20px;
+}
+
+/* Input and button styling */
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #000080;
+}
+
+button {
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #000080;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #000080;
+  color: #FFFFFF;
+}
+
+/* Magic 8-Ball answer text */
+#answer {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #FF0000;
+}
+
+/* Thinking animation */
+@keyframes pulse {
+  0% { color: #FF0000; }
+  50% { color: #FFA500; }
+  100% { color: #FF0000; }
+}
+
+#answer.thinking {
+  animation: pulse 1s infinite;
+}
